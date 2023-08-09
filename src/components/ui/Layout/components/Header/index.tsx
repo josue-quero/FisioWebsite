@@ -12,7 +12,7 @@ function Header() {
         <header className={styles.header}>
             <section className={styles.headerContent}>
                 <div className={styles.titleContainer}>
-                    <h3>FridaGPT Admin</h3>
+                    <h3>Fisio</h3>
                 </div>
             </section>
             <section className={styles.navContent}>
