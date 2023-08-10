@@ -1,16 +1,19 @@
 import { useState } from "react";
 import styles from './styles.module.css';
+import { useMediaQuery } from 'react-responsive';
 
 import close from '../../../../../assets/close-outline.svg';
 import { navLinks } from '../../../../../constants';
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
+  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
   const [toggle, setToggle] = useState(false);
 
   return (
     <nav className={styles.navbar}>
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+      {isTabletOrMobile ? (
+      <ul className={styles.routesList}>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -22,9 +25,8 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
-      </ul>
-
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      </ul>) : (
+        <div className="sm:hidden flex flex-1 justify-end items-center">
         <img
           src={close}
           alt="menu"
@@ -52,6 +54,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      )}
     </nav>
   );
 };
