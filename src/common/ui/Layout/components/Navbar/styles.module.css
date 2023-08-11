@@ -1,0 +1,65 @@
+.navbar {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.routesList {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    flex-grow: 1;
+}
+
+.routeLink {
+    font-style: normal;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.activeLink {
+    color: var(--g-accent-color)
+}
+
+.unactiveLink {
+    color: var(--g-normal-text-color)
+}
+
+.collapsedContainer {
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    align-items: center;
+}
+
+.collapsedListContainer {
+    display: flex;
+    padding: 24px;
+    background: linear-gradient(var(--g-primary-color), var(--g-primary-offset-color));
+    position: absolute;
+    top: 80px;
+    right: 0;
+    margin: 8px 16px;
+    min-width: 140px;
+    border-radius: 12px;
+}
+
+.collapsedList {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    align-items: start;
+    flex: 1;
+    flex-direction: column;
+}
+
+.burguerIcon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}

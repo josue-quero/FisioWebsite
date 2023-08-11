@@ -128,7 +128,7 @@
   font-family: 'Poppins';
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #ffffffde;
   background-color: #242424;
 
   font-synthesis: none;
@@ -136,6 +136,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --g-primary-color: #052F5F;
+  --g-primary-offset-color: #005377;
+  --g-secondary-color: #D5C67A;
+  --g-accent-color: #06A77D;
+  --g-normal-text-color: #f9efef;
+  --g-contrast-text-color: #052F5F;
+  --g-background-color: #f9efef;
 }
 
 a {

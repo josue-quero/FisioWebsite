@@ -9,7 +9,8 @@ function Layout() {
             <main className={styles.mainContent}>
                 <Outlet />
             </main>
-
         </div>
     );
 };
+
+export default Layout;
